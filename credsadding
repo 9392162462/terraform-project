@@ -1,10 +1,13 @@
 #path: Dashboard
-Manage Jenkins
-Credentials
-System
-Global credentials (unrestricted)
-kind: secret key
-secret: give access key
-id: acess key
+---> Manage Jenkins
+---> Credentials
+---> System
+Global credentials (unrestricted) --> click Add domain
+1. kind: secret text (aws_access_key_id = AKIAYCIZJCGO6UBCNJO5 )
+   access key: AKIAYCIZJCGO6UBCNJO5
+   id: acesskey (Name mention)
+2. kind: secret text (aws_secret_access_key = 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)
+   secret: u1GNAlfobr8LcAdovIvzDQIvuhYW/QiVqRk4MO7b 
+   id: secretkey (Name mention)
 
-give access key and secret key like this
+ ----->>>  give access key and secret key like this
