@@ -11,3 +11,6 @@ Global credentials (unrestricted) --> click Add domain
    id: secretkey (Name mention)
 
  ----->>>  give access key and secret key like this
+
+Directory change cmd : cd /var/lib/jenkins/workspace/hari-terraform-pipeline
+Credentials checking :  cat /root/.aws/credentials
