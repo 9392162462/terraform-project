@@ -1,6 +1,6 @@
 resource "aws_elb" "bar" {
   name               = "hari-terraform-elb"
-  availability_zones = ["ap-southeast-1a", "ap-southeast-1b"]
+  availability_zones = ["ap-southeast-2a", "ap-southeast-2b"]
 
   listener {
     instance_port     = 80
@@ -29,7 +29,7 @@ resource "aws_elb" "bar" {
   cluster_identifier      = "aurora-cluster-demo"
   engine                  = "aurora-mysql"
   engine_version          = "5.7.mysql_aurora.2.11.2"
-  availability_zones      = ["ap-southeast-1a", "ap-southeast-1b"]
+  availability_zones      = ["ap-southeast-2a", "ap-southeast-2b"]
   database_name           = "hari"
   master_username         = "hari"
   master_password         = "harik#68"
@@ -39,7 +39,7 @@ resource "aws_elb" "bar" {
 
 /*resource "aws_instance" "one" {
   for_each = toset(["one", "two", "three"])
-  ami           = "ami-0b825ad86ddcfb907"
+  ami           = "ami-0dfb78957e4edea0c"
   instance_type = "t2.micro"
   tags = {
     Name = "instance-${each.key}"
